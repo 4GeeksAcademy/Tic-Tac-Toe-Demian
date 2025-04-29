@@ -1,11 +1,48 @@
-/* 
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #110000;
+    color: #ffffff;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+}
+.board {
+    background-color: rgb(77, 74, 74);
+    height: 500px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr);
+    position: relative;
+    border-radius: 10px; 
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.square {
+    background-color: #bd3a3a;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 15px;
+    border-radius: 10px;
+    font-size: 72px;
+}
 
-*/
+.turn {
+    position: relative;
+    text-align: center;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.winner-message {
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
